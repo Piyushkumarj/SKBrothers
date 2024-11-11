@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order - S K Brothers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Order Items</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <p1>|</p1>
+            <a href="order.html">Order</a>
+            <p1>|</p1>
+            <a href="contact.html">Contact</a>
+            <p1>|</p1>
+            <a href="help.html">Help</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Place a Bulk Order</h2>
+        <form action="order_process.php" method="POST">
+            <label for="customer_name">Name:</label>
+            <input type="text" id="customer_name" name="customer_name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="item_name">Item:</label>
+            <input type="text" id="item_name" name="item_name" required>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" required>
+
+            <button type="submit">Submit Order</button>
+        </form>
+    </main>
+</body>
+</html>
